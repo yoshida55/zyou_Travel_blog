@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header_area {
   width: 100%;
 }
@@ -97,4 +98,515 @@ header_area {
   font-size: 1.4rem;
   text-decoration: underline; /* 下線 */
   color: #333333;
+=======
+@charset "utf-8";
+
+/* ===============================================
+   Base (Mobile First)
+   =============================================== */
+html {
+  /* スマホ版基準 (375px幅で10px) */
+  font-size: calc(10 / 375 * 100vw);
+}
+
+body {
+  font-family: "Noto Sans JP", "Noto Sans", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+  /* ↓ 推定値です。ヘッダーの高さに合わせて変更してください */
+  padding-top: 10rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  /* ↓ 推定値です。ホバー時の透過度を変更してください */
+  opacity: 0.7;
+}
+
+/* 共通ラッパー */
+.inner {
+  width: 100%;
+  max-width: 1200px; /* 仕様：コンテンツ幅1200px */
+  /* ↓ 推定値です。スマホ版の左右余白を変更してください */
+  padding: 0 1.6rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ===============================================
+   Header (Mobile)
+   =============================================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header_inner {
+  /* ↓ 推定値です。ロゴ周りの余白を変更してください */
+  padding: 1.5rem 1.6rem;
+  text-align: left;
+}
+
+.header_logo {
+  /* ↓ 推定値です。ロゴのサイズを変更してください */
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.header_nav {
+  background-color: #333;
+  width: 100%;
+}
+
+.header_nav_list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header_nav_item {
+  width: 25%;
+}
+
+.header_nav_link {
+  display: block;
+  color: #fff;
+  /* ↓ 推定値です。ナビの余白を変更してください */
+  padding: 1rem 0;
+  text-align: center;
+  /* ↓ 推定値です。ナビの文字サイズを変更してください */
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* ===============================================
+   Pickup (Mobile)
+   =============================================== */
+.pickup_area {
+  /* ↓ 推定値です。エリア上下の余白を変更してください */
+  padding: 3rem 0;
+}
+
+.pickup_list {
+  display: flex;
+  flex-direction: column;
+  /* ↓ 推定値です。記事間の余白を変更してください */
+  gap: 3rem;
+}
+
+.pickup_article {
+  width: 100%;
+}
+
+.pickup_link:hover {
+  text-decoration: none;
+}
+
+.pickup_image {
+  width: 100%;
+  /* ↓ 推定値です。画像下の余白を変更してください */
+  margin-bottom: 1rem;
+}
+
+.pickup_title {
+  /* ↓ 推定値です。タイトルの文字サイズを変更してください */
+  font-size: 1.6rem;
+  font-weight: 700;
+  /* ↓ 推定値です。タイトル下の余白を変更してください */
+  margin-bottom: 0.5rem;
+}
+
+.pickup_readmore {
+  /* ↓ 推定値です。READ MOREの文字サイズを変更してください */
+  font-size: 1.2rem;
+  text-align: center;
+  /* ↓ 推定値です。READ MORE上の余白を変更してください */
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+.pickup_link:hover .pickup_readmore {
+  text-decoration: none;
+}
+
+/* ===============================================
+   Container (Mobile)
+   =============================================== */
+.container_area {
+  /* ↓ 推定値です。メインエリア全体の下余白を変更してください */
+  padding-bottom: 6rem;
+}
+
+.container_flex {
+  display: flex;
+  flex-direction: column;
+  /* ↓ 推定値です。メインとサイドバーの間の余白を変更してください */
+  gap: 5rem;
+}
+
+/* ===============================================
+   Main Area (Mobile)
+   =============================================== */
+.main_area {
+  width: 100%;
+}
+
+.main_article {
+  /* ↓ 推定値です。記事同士の余白を変更してください */
+  margin-bottom: 5rem;
+}
+
+.main_article:last-child {
+  margin-bottom: 0;
+}
+
+.main_article_title {
+  /* ↓ 推定値です。記事タイトルの文字サイズを変更してください */
+  font-size: 2.2rem;
+  font-weight: 700;
+  /* ↓ 推定値です。タイトル下の余白を変更してください */
+  margin-bottom: 1rem;
+}
+
+.main_article_meta {
+  display: flex;
+  /* ↓ 推定値です。日付とカテゴリの間隔を変更してください */
+  gap: 2rem;
+  /* ↓ 推定値です。日付等の文字サイズを変更してください */
+  font-size: 1.2rem;
+  color: #666;
+  /* ↓ 推定値です。日付下の余白を変更してください */
+  margin-bottom: 1.5rem;
+}
+
+.main_article_image {
+  /* ↓ 推定値です。画像下の余白を変更してください */
+  margin-bottom: 2rem;
+}
+
+.main_article_body {
+  /* ↓ 推定値です。本文の文字サイズを変更してください */
+  font-size: 1.4rem;
+  /* ↓ 推定値です。行間を変更してください */
+  line-height: 1.8;
+  /* ↓ 推定値です。本文下の余白を変更してください */
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.main_article_footer {
+  text-align: center;
+}
+
+.read_more_link {
+  display: inline-block;
+  /* ↓ 推定値です。リンクの文字サイズを変更してください */
+  font-size: 1.4rem;
+  position: relative;
+  text-decoration: underline;
+}
+
+.read_more_link:hover {
+  text-decoration: none;
+}
+
+/* ===============================================
+   Aside Area (Mobile)
+   =============================================== */
+.aside_area {
+  width: 100%;
+}
+
+.aside_section {
+  /* ↓ 推定値です。サイドバー内の各セクション下の余白を変更してください */
+  margin-bottom: 5rem;
+}
+
+.aside_title {
+  /* ↓ 推定値です。サイドバー見出しの文字サイズを変更してください */
+  font-size: 1.8rem;
+  font-weight: 700;
+  /* ↓ 推定値です。見出し下の余白を変更してください */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Author */
+.author_section {
+  text-align: center;
+}
+
+.author_image img {
+  /* ↓ 推定値です。プロフィール画像のサイズを変更してください */
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 50%;
+  /* ↓ 推定値です。画像下の余白を変更してください */
+  margin-bottom: 2rem;
+}
+
+.author_text {
+  text-align: left;
+  /* ↓ 推定値です。プロフィール文の文字サイズを変更してください */
+  font-size: 1.4rem;
+}
+
+/* Ranking */
+.ranking_list {
+  display: flex;
+  flex-direction: column;
+  /* ↓ 推定値です。ランキング記事間の余白を変更してください */
+  gap: 2rem;
+}
+
+.ranking_article {
+  display: block;
+}
+
+.ranking_image {
+  /* ↓ 推定値です。画像下の余白を変更してください */
+  margin-bottom: 0.5rem;
+}
+
+.ranking_article_title {
+  /* ↓ 推定値です。ランキングタイトルの文字サイズを変更してください */
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Archive */
+.archive_list {
+  border-top: 1px solid #ddd;
+}
+
+.archive_item {
+  border-bottom: 1px solid #ddd;
+}
+
+.archive_item a {
+  display: block;
+  /* ↓ 推定値です。リストの余白を変更してください */
+  padding: 1.5rem 1.6rem;
+  /* ↓ 推定値です。リストの文字サイズを変更してください */
+  font-size: 1.4rem;
+  position: relative;
+}
+
+/* ===============================================
+   Footer (Mobile)
+   =============================================== */
+.footer {
+  /* ↓ 推定値です。フッターの背景色を変更してください */
+  background-color: #f7f7f7;
+  /* ↓ 推定値です。フッター内部の余白を変更してください */
+  padding: 4rem 0 2rem;
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: column;
+  /* ↓ 推定値です。セクション間の余白を変更してください */
+  gap: 4rem;
+  /* ↓ 推定値です。コピーライトとの間隔を変更してください */
+  margin-bottom: 4rem;
+}
+
+.footer_section {
+  width: 100%;
+}
+
+.footer_title {
+  /* ↓ 推定値です。フッター見出しの文字サイズを変更してください */
+  font-size: 1.6rem;
+  font-weight: 700;
+  /* ↓ 推定値です。見出し下の余白を変更してください */
+  margin-bottom: 2rem;
+}
+
+/* About (Arrow Link) */
+.about_text {
+  /* ↓ 推定値です。説明文の文字サイズを変更してください */
+  font-size: 1.4rem;
+  /* ↓ 推定値です。説明文下の余白を変更してください */
+  margin-bottom: 2rem;
+}
+
+.about_links li {
+  /* ↓ 推定値です。リンク間の余白を変更してください */
+  margin-bottom: 0.5rem;
+}
+
+.arrow_link {
+  /* ↓ 推定値です。リンクの文字サイズを変更してください */
+  font-size: 1.4rem;
+  position: relative;
+  /* ↓ 推定値です。矢印アイコン分の左余白を変更してください */
+  padding-left: 1.5rem;
+  display: inline-block;
+  color: #333;
+}
+
+/* 三角矢印 (▶) */
+.arrow_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* ↓ 推定値です。矢印の位置調整を行ってください */
+  top: 0.6em;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* ↓ 推定値です。矢印の大きさを変更してください */
+  border-width: 5px 0 5px 6px;
+  border-color: transparent transparent transparent #333;
+}
+
+/* Menu (Lines) */
+.footer_menu_list {
+  border-top: 1px solid #ddd;
+}
+
+.footer_menu_list li {
+  border-bottom: 1px solid #ddd;
+}
+
+.footer_menu_list a {
+  display: block;
+  /* ↓ 推定値です。リストの余白を変更してください */
+  padding: 1.4rem 0;
+  /* ↓ 推定値です。リストの文字サイズを変更してください */
+  font-size: 1.4rem;
+}
+
+/* Twitter */
+.twitter_embed {
+  background-color: #e5e5e5;
+  /* ↓ 推定値です。ツイートエリアの高さを変更してください */
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.copyright {
+  text-align: center;
+  /* ↓ 推定値です。コピーライトの文字サイズを変更してください */
+  font-size: 1.2rem;
+}
+
+/* ===============================================
+   Desktop Style (min-width: 768px)
+   =============================================== */
+@media (min-width: 768px) {
+  html {
+    /* PC版は固定サイズ (10px) */
+    font-size: 10px;
+  }
+
+  body {
+    /* ↓ 推定値です。PC時のヘッダー高さに合わせて調整してください */
+    padding-top: 12rem;
+  }
+
+  /* Header */
+  .header_inner {
+    /* ↓ 推定値です。PC時のロゴ周り余白を変更してください */
+    padding: 2rem 1.6rem;
+  }
+
+  .header_nav_list {
+    max-width: 1200px;
+    justify-content: center;
+  }
+
+  .header_nav_item {
+    width: auto;
+  }
+
+  .header_nav_link {
+    /* ↓ 推定値です。PC時のナビ余白を変更してください */
+    padding: 1rem 3rem;
+    /* ↓ 推定値です。PC時のナビ文字サイズを変更してください */
+    font-size: 1.6rem;
+  }
+
+  /* Pickup */
+  .pickup_area {
+    /* ↓ 推定値です。PC時のエリア余白を変更してください */
+    padding: 5rem 0;
+  }
+
+  .pickup_list {
+    flex-direction: row;
+    justify-content: space-between;
+    /* ↓ 推定値です。PC時の記事間隔を変更してください */
+    gap: 2rem;
+  }
+
+  .pickup_article {
+    /* ↓ 推定値です。3カラム時の幅調整を行ってください */
+    width: 32%;
+  }
+
+  /* Container */
+  .container_flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* Main */
+  .main_area {
+    /* ↓ 推定値です。メインエリアの幅を変更してください */
+    width: 65%;
+  }
+
+  .main_article_title {
+    /* ↓ 推定値です。PC時の記事タイトル文字サイズを変更してください */
+    font-size: 2.6rem;
+  }
+
+  /* Aside */
+  .aside_area {
+    /* ↓ 推定値です。サイドバーの幅を変更してください */
+    width: 30%;
+  }
+
+  .aside_title {
+    text-align: left;
+  }
+
+  /* Footer */
+  .footer_row {
+    flex-direction: row;
+    justify-content: space-between;
+    /* ↓ 推定値です。PC時のカラム間隔を変更してください */
+    gap: 3rem;
+  }
+
+  .footer_section {
+    /* ↓ 推定値です。フッターカラムの幅調整を行ってください */
+    width: 32%;
+  }
+>>>>>>> c4add1f81d812f92adbc49d6ce85399e797ed196
 }
