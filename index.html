@@ -3,14 +3,254 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Diary</title>
+    <title>Travel Blog</title>
+    <meta name="description" content="旅行ブログのサイトです。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/work.css" />
   </head>
-
   <body>
-    <div class="wrapper">
-      <main></main>
+    <header id="header" class="header">
+      <div class="header_inner">
+        <h1 class="header_logo"><a href="#">Travel Blog</a></h1>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_nav_list">
+          <li class="header_nav_item">
+            <a href="#" class="header_nav_link">NEW</a>
+          </li>
+          <li class="header_nav_item">
+            <a href="#" class="header_nav_link">COLUMN</a>
+          </li>
+          <li class="header_nav_item">
+            <a href="#" class="header_nav_link">SERIES</a>
+          </li>
+          <li class="header_nav_item">
+            <a href="#" class="header_nav_link">Q&A</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="pickup" class="pickup_area">
+      <div class="inner">
+        <div class="pickup_list">
+          <article class="pickup_article">
+            <a href="#" class="pickup_link">
+              <div class="pickup_image">
+                <img src="img/pickup1.jpg" alt="ピックアップ記事サムネイル" />
+              </div>
+              <h2 class="pickup_title">
+                タイトルテキストテキストテキストテキストテキストテキストテキスト
+              </h2>
+              <div class="pickup_readmore">READ MORE</div>
+            </a>
+          </article>
+          <article class="pickup_article">
+            <a href="#" class="pickup_link">
+              <div class="pickup_image">
+                <img src="img/pickup2.jpg" alt="ピックアップ記事サムネイル" />
+              </div>
+              <h2 class="pickup_title">
+                タイトルテキストテキストテキストテキストテキストテキストテキスト
+              </h2>
+              <div class="pickup_readmore">READ MORE</div>
+            </a>
+          </article>
+          <article class="pickup_article">
+            <a href="#" class="pickup_link">
+              <div class="pickup_image">
+                <img src="img/pickup3.jpg" alt="ピックアップ記事サムネイル" />
+              </div>
+              <h2 class="pickup_title">
+                タイトルテキストテキストテキストテキストテキストテキストテキスト
+              </h2>
+              <div class="pickup_readmore">READ MORE</div>
+            </a>
+          </article>
+        </div>
+      </div>
     </div>
+
+    <div id="container" class="container_area">
+      <div class="inner container_flex">
+        <main class="main_area">
+          <div class="main_list">
+            <article class="main_article">
+              <h2 class="main_article_title">
+                タイトルテキストテキストテキストテキストテキストテキスト
+              </h2>
+              <ul class="main_article_meta">
+                <li><time datetime="2020-01-01">2020/01/01</time></li>
+                <li>カテゴリ1</li>
+              </ul>
+              <figure class="main_article_image">
+                <a href="#"><img src="img/main1.jpg" alt="記事サムネイル" /></a>
+              </figure>
+              <div class="main_article_body">
+                <p>
+                  本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+              </div>
+              <div class="main_article_footer">
+                <a href="#" class="read_more_link">READ MORE</a>
+              </div>
+            </article>
+
+            <article class="main_article">
+              <h2 class="main_article_title">
+                タイトルテキストテキストテキストテキストテキストテキスト
+              </h2>
+              <ul class="main_article_meta">
+                <li><time datetime="2020-01-01">2020/01/01</time></li>
+                <li>カテゴリ1</li>
+              </ul>
+              <figure class="main_article_image">
+                <a href="#"><img src="img/main2.jpg" alt="記事サムネイル" /></a>
+              </figure>
+              <div class="main_article_body">
+                <p>
+                  本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+              </div>
+              <div class="main_article_footer">
+                <a href="#" class="read_more_link">READ MORE</a>
+              </div>
+            </article>
+
+            <article class="main_article">
+              <h2 class="main_article_title">
+                タイトルテキストテキストテキストテキストテキストテキスト
+              </h2>
+              <ul class="main_article_meta">
+                <li><time datetime="2020-01-01">2020/01/01</time></li>
+                <li>カテゴリ1</li>
+              </ul>
+              <figure class="main_article_image">
+                <a href="#"><img src="img/main3.jpg" alt="記事サムネイル" /></a>
+              </figure>
+              <div class="main_article_body">
+                <p>
+                  本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+              </div>
+              <div class="main_article_footer">
+                <a href="#" class="read_more_link">READ MORE</a>
+              </div>
+            </article>
+          </div>
+        </main>
+
+        <aside class="aside_area">
+          <section class="aside_section author_section">
+            <div class="author_image">
+              <img src="img/author.jpg" alt="Name Name" />
+            </div>
+            <h3 class="aside_title">Name Name</h3>
+            <p class="author_text">
+              プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </section>
+
+          <section class="aside_section ranking_section">
+            <h3 class="aside_title">Ranking</h3>
+            <div class="ranking_list">
+              <article class="ranking_article">
+                <a href="#" class="ranking_link">
+                  <div class="ranking_image">
+                    <img src="img/ranking1.jpg" alt="ランキング記事" />
+                  </div>
+                  <h4 class="ranking_article_title">
+                    タイトルテキストテキストテキストテキストテキストテキスト
+                  </h4>
+                </a>
+              </article>
+              <article class="ranking_article">
+                <a href="#" class="ranking_link">
+                  <div class="ranking_image">
+                    <img src="img/ranking2.jpg" alt="ランキング記事" />
+                  </div>
+                  <h4 class="ranking_article_title">
+                    タイトルテキストテキストテキストテキストテキストテキスト
+                  </h4>
+                </a>
+              </article>
+              <article class="ranking_article">
+                <a href="#" class="ranking_link">
+                  <div class="ranking_image">
+                    <img src="img/ranking3.jpg" alt="ランキング記事" />
+                  </div>
+                  <h4 class="ranking_article_title">
+                    タイトルテキストテキストテキストテキストテキストテキスト
+                  </h4>
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section class="aside_section archive_section">
+            <h3 class="aside_title">Archive</h3>
+            <ul class="archive_list">
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+              <li class="archive_item"><a href="#">XXXX年XX月(XX)</a></li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="inner">
+        <div class="footer_row">
+          <section class="footer_section about_area">
+            <h3 class="footer_title">About</h3>
+            <p class="about_text">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <ul class="about_links">
+              <li><a href="#" class="arrow_link">プロフィール詳細</a></li>
+              <li><a href="#" class="arrow_link">お仕事の依頼</a></li>
+              <li><a href="#" class="arrow_link">お問い合わせ</a></li>
+            </ul>
+          </section>
+
+          <section class="footer_section menu_area">
+            <h3 class="footer_title">Menu</h3>
+            <ul class="footer_menu_list">
+              <li><a href="#">NEW</a></li>
+              <li><a href="#">CATEGORY</a></li>
+              <li><a href="#">COLUMN</a></li>
+              <li><a href="#">SERIES</a></li>
+              <li><a href="#">Q&A</a></li>
+            </ul>
+          </section>
+
+          <section class="footer_section twitter_area">
+            <h3 class="footer_title">Twitter</h3>
+            <div class="twitter_embed">
+              <div class="twitter_dummy">ツイート埋め込みエリア</div>
+            </div>
+          </section>
+        </div>
+
+        <p class="copyright">&copy; Travel & Blog</p>
+      </div>
+    </footer>
   </body>
 </html>
